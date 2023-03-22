@@ -1,13 +1,5 @@
-"use strict";
+import { createApp } from 'vue'
+import '.style.css'
+import App from './App.vue'
 
-const { createApp } = Vue;
-
-const app = createApp({
-    data() {
-
-        return {
-            titolo: "La mia prima app con Vite!",
-        }
-
-    }
-}); app.mount("#app");
+createApp(App).mount('#app')
